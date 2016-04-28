@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:cacheColorHint="@null"
+   
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/groupstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="hello"
+     
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/greyimg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/logo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@drawable/group"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/logo_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_id"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Group Chat"
+            android:textColor="#bf1e2e"
+            android:textSize="@dimen/large_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginRel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rrrr"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_loginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_size"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etuser_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_loginTxt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_bdr_with_white"
+            android:hint="Mobile Number"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/big_size" />
+<TextView
+            android:id="@+id/enteruser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+          android:paddingLeft="10dp"
+            android:text="Note:Enter User Name"
+            android:layout_below="@+id/etuser_name"
+            android:textColor="#ff3a3a"
+            android:textSize="@dimen/small_size"
+            android:textStyle="italic"
+            android:visibility="invisible"
+             />
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etuser_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_bdr_with_white"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="@dimen/big_size" />
+
+        <CheckBox
+            android:id="@+id/check_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/custom_checkbox"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:paddingLeft="30dp"
+            android:text="Remember me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_remember"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgblue"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_new"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@+id/tv_signin"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="New User Click Here"
+            android:textColor="#006dc6"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="forgot password"
+        android:textColor="@color/blue_font"
+        android:textSize="@dimen/big_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

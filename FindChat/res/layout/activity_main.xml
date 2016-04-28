@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/greyimg">
+<TextView 
+    android:id="@+id/contacts"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="ContctsList"
+    android:padding="5dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:background="@drawable/bgblue"/>
+<TextView 
+    android:id="@+id/grpmem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="ADD GROUP PARTICIPANTS"
+    android:padding="5dp"
+    android:gravity="left"
+    android:layout_below="@+id/contacts"
+    android:textColor="@color/black"
+    android:background="@drawable/my_edittext"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomBtn" 
+        android:layout_below="@+id/grpmem"
+      android:transcriptMode="alwaysScroll"
+     
+        android:background="@drawable/greyimg"
+        android:dividerHeight="2dp"
+        android:divider="#ededed">
+    </ListView>
+ <TextView
+        android:id="@+id/contxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBtn" 
+        android:layout_below="@+id/grpmem"
+        android:background="#ffffff"
+        android:dividerHeight="2dp"
+        android:text="NO Contact Saved"
+        android:divider="#ededed"
+        android:visibility="invisible">
+    </TextView>
+    <Button
+        android:id="@+id/bottomBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgblue"
+        android:textColor="@color/white"
+           android:padding="5dp"
+        android:text="create group" />
+
+    <Button
+        android:id="@+id/bottomBtn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+           android:background="@drawable/bgblue"
+           android:textColor="@color/white"
+           android:padding="5dp"
+        android:text="add group" />
+
+</RelativeLayout>

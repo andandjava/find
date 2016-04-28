@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+   
+    <color name="white">#ffffff</color>
+    <color name="read_morebg">#f2f2f2 </color>
+    <color name="hash">#5A5C5C</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="menu_text">#bebebf</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="order_bg">#dadada</color>
+    <color name="list_view_bg">#BDBDBD</color>
+    <color name="slide_bg">#4f4f4f</color>
+    <color name="form_field">#d8d8d8</color>
+    <color name="green">#f4a746</color>
+    <color name="bgcolor">#8b0000</color>
+    <color name="blue">#b53535</color>
+    <color name="list_font_color"> #4b4a4a</color>
+    <color name="green_line">#a84c02</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="text_background">#E9E9E9</color>
+    
+  <!--  new color codes -->
+    <color name="tlt_txt_color">#05b1d2</color>
+    <color name="blue_font">#0404fe</color>
+     <color name="green_font"> #01af4e</color>
+     <color name="red">#bd0100</color>
+    <color name="dark_hash">#545454</color>
+   
+    
+    <color name="textColor">#FFF</color>
+	<color name="textFieldColor">#000</color>
+	<color name="textShadow">#FFF</color>
+	<color name="listViewBg">#DADFEE</color>
+
+	<color name="sendLightColor">#8897BF</color>
+	<color name="sendMeduimColor">#5D6CA5</color>
+	<color name="sendDarkColor">#515F9F</color>
+
+	<color name="barDarkColor">#CECECE</color>
+	<color name="barMeduimColor">#DFDEE0</color>
+	<color name="barLightColor">#F2F2F2</color>
+    
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rect_bdr_with_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="@dimen/large_size" />
+
+    <EditText
+        android:id="@+id/etuser_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_bdr_with_white"
+        android:hint="UserName"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_size" />
+
+    <EditText
+        android:id="@+id/et_mobileno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_bdr_with_white"
+        android:hint="Mobile Number"
+        android:imeOptions="actionNext"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+         android:textColor="@color/black"
+        android:singleLine="true"
+        android:textSize="@dimen/big_size" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_bdr_with_white"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+         android:textColor="@color/black"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="@dimen/big_size" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/tlt_txt_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="SignUp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

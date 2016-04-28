@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greyimg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bgblue"
+        android:drawableLeft="@drawable/arrowwhite"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Contacts"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomBtn"
+        android:layout_below="@+id/text_contact"
+        android:background="@color/white"
+        android:divider="#ededed"
+        
+        android:dividerHeight="2dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/bottomBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgblue"
+        android:padding="8dp"
+        android:text="Create group"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greyimg" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bgblue"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <LinearLayout
+            android:id="@+id/toplayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="5dp"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <ImageView
+                android:id="@+id/backarraow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/arrowwhite" />
+
+          
+
+            <LinearLayout
+                android:id="@+id/group_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/firstlayout"
+               
+                android:orientation="vertical" >
+           
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Parse Chat "
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size" />
+
+            <TextView
+                android:id="@+id/tvTitulo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_size" />
+ </LinearLayout>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:padding="5dp"
+        
+            android:src="@drawable/map_location" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearchatlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lineartext"
+        android:layout_below="@+id/header"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/chatList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/hash"
+            android:dividerHeight="1dp"
+            android:stackFromBottom="true"
+            android:text="contact name"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:transcriptMode="alwaysScroll"
+            android:windowSoftInputMode="adjustPan" >
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineartext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_edittext"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/etMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.75"
+            android:ems="10"
+            android:hint="@string/hintet"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="10dp"
+            android:src="@drawable/send"
+            android:text="@string/buttontext" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greyimg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relatives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bgblue" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Group Name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="#212021" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/addcontact_layout"
+        android:layout_below="@+id/relatives"
+        android:background="@drawable/greyimg"
+        android:divider="#ededed"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/addcontact_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBtn" >
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/plus_symbol"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bottomBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bgblue"
+        android:padding="10dp"
+        android:text="Save Group"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
